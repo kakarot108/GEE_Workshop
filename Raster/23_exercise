@@ -1,0 +1,23 @@
+// EXERCISE:
+
+// Use the following code to get the boundary for Uganda - don't worry about understanding it we'll get to it in the next section
+var dataset = ee.FeatureCollection('USDOS/LSIB_SIMPLE/2017');
+var ugandaBorder = dataset.filter(ee.Filter.eq('country_na', 'Uganda'));
+
+// 1) CREATE A SENTINEL 2 IMAGE COLLECTION FOR 2020
+var collection = 
+
+// 2) FILTER THE COLLECTION TO THE BOUNDS OF UGANDA, AND ONLY KEEP IMAGES WITH < 30% CLOUD COVER
+var filtered =
+
+// 3) REDUCE THE IMAGE COLLECTION USING A MEDIAN REDUCER
+
+// 4) ADD THE RESULTANT IMAGE TO THE MAP WITH THE CORRECT STYLING FOR RGB 
+
+// 5) COMPUTE THE NDVI FOR EACH IMAGE IN THE FILTERED COLLECTION
+
+// 6) CREATE A GREENEST PIXEL MOSAIC 
+
+// 7) DISPLAY THE GREENEST PIXEL MOSAIC ON THE MAP USING A COLOR PALETTE OF 5 CLASSES
+
+// 8) EXPORT THE GREENEST PIXEL MOSAIC AT A SCALE OF 1000m 
